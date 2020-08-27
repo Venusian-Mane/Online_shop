@@ -1,0 +1,75 @@
+<!-- this is the html file for that is linked to the Online store home page-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="online-store.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="checkOut.js"></script>
+    <!-- I liked my webpage to the Bootstrap CDN as well as linked it to my original CSS file for customization-->
+    <style type="text/css">
+    p {
+        text-align: justify;
+    }
+
+    .dropdown #list a {
+        display: block;
+        clear: both;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        background: #929292;
+    }
+
+    .dropdown {
+        float: left;
+    }
+
+    .dropdown h3 {
+        margin: 0px;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        background: #323232;
+    }
+    </style>
+    <!-- i aligned all the text on the paragraphs to be justified -->
+</head>
+
+<body>
+    <h1> About us </h1>
+    <hr>
+    <p>
+        Techo Town was established 2 years by our diligent and competent founder Manelisi Madini. All of his work is dedicated to all of the techies of the world who need to get there hands on affordable tech and get it shipped to the as soon as possible. Funded by numerous sponsors, Manelisi made sure that the company, its investors and employees as well as its customers would get quality results, salaries and products respectively. Generosity fuels us, and making a difference in the tech world drives us.
+    </p>
+    <!--  Above is just a short fictioonal description of the company and the website -->
+    <br>
+    <p>
+        If you feel that there is a problem with our products (ie. faulty or damaged) or have any suggestions you would like to make to contribute towards the growth of the company, please don't hesitate to contact us.
+    </p>
+    <br>
+    <br>
+    <h2 id="contact"> Contact us </h2>
+    <p>
+        Please leave your email and cellphone number below and we will get right back to you. Thank you.
+    </p>
+    <form class="inline-form">
+        <label> Email: </label>
+        <input type="email" name="email" placeholder="Enter e-mail">
+        <label> Cellphone: </label>
+        <input type="number" placeholder="Enter Number" name="quantity">
+        <button class="btn btn-secondary" type="submit"> Submit </button>
+    </form>
+    <br>
+    <!-- i created another form at the bottom of this page so that the user can contact the company. This is all fictional andd the form is non-functional at the moment-->
+    <div class="dropdown">
+        <h3> Rate us </h3>
+        <div id="list">
+            <a href="#">Rate Here</a>
+            <a href="#">Feedback Here</a>
+        </div>
+    </div>
+</body>
+
+</html>

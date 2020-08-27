@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Check-out Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="online-store.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type="text/javascript" src="onlineStore.js"></script>
+    <script type="text/javascript" src="checkOut.js"></script>
+    <style type="text/css">
+    h2 {
+        color: black;
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        height: 150px;
+        width: 350px;
+    }
+    </style>
+</head>
+
+<body onload="loaded()">
+    <div id="headsect">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="logo" src="images/T-logo.jpg" alt="Techno Town logo">
+            </div>
+            <div class="col-md-4">
+                <h1> Techno Town</h1>
+            </div>
+            <div class="col-md-4">
+                <img class="logo" src="images/T-logo.jpg" alt="Techno Town logo">
+            </div>
+        </div>
+        <!--this is the name of the online store and the logo above-->
+        <h3> <small>The home of online electronics shopping </small></h3>
+        <hr>
+        <br>
+    </div>
+    <br>
+    <div id="navsect" class="container">
+		<nav class="navbar navbar-light bg-light">
+			<a href="Online-store.html"> Home </a>
+			<a href="Online-store.html#products"> Products </a>
+			<a href="#"> Gift Cards </a>
+			<a href="about.html#contact"> Contact Us</a>
+			<a href="about.html"> About Us </a>
+			<a href="check-out.html"> Check Out </a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+	</div>
+	<br>
+    <div id="couponSect">
+        <h2> Techno Town Rewards Programme</h2>
+        <br>
+        <p>
+            Techno Town is introducing our new programme to help save shoppers unnbelievable amounts of money when you order online with us. It's call the TT Coupon and Rewards Programme.
+            All of Techno Town shopper can now save more money for the devices they love and it's really simple to join. Just fill out the application form below to join and save more.
+            All you need is your name, email, phone number and ID number to join a community that gets up to 45% off the devices they buy with us.
+        </p>
+        <br>
+        <p>
+            Apply now add get 10% off your current order with a free first coupon.
+        </p>
+        <br>
+        <form>
+            <label> Full Name</label>
+            <input type="text" name="name">
+            <label>Email</label>
+            <input type="text" name="email">
+            <br>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+            <label>ID number</label>
+            <input type="number" name="idNumber">
+            <br>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="Submit">Submit</button>
+        </form>
+        <br>
+    </div>
+    <div id="optionSect">
+        <p>
+            Here you can choose your method of delivery and you will be charged accordingly and added to your final total.
+            Select your delivery method.
+        </p>
+        <h3> Select Delivery method </h3>
+        <div class="onClickTextOverImage" style="background-image: url(images/post.jpg);">
+            <a href="#post"></a>
+            <div id="post"> Collect at Post office </div>
+        </div>
+        <div class="onClickTextOverImage" style="background-image: url(images/delivery.jpg);">
+            <a href="#delivery"></a>
+            <div id="delivery"> Have it Delievered to your door. </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="checkOutSect">
+        <button onclick="checkOutTable()"> Show Bill </button>
+        <table id="checkTable">
+            <tr>
+                <td>Item name</td>
+                <td>Price</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <p>
+        You have reached the end of your shoppig experience with us. We hope that you will come back soon to support us again.
+        Just hit the button below to check out and have you
+    </p>
+    <br>
+    <button type="button" id="shipBut"> Ship you items here </button>
+    <div id="boat">
+        <img id="cargoPic" src="images/cargo1.jpg">
+    </div>
+</body>
+
+</html>

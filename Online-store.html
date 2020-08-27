@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Techno Town Home page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="online-store.css">
+	<script type="text/javascript" src="onlineStore.js"></script>
+	<!-- i created a lik to the Bootstrap CDN to style my website but i also added my own CSS file for more customization-->
+</head>
+<body>
+	<!-- this is the first section of the page, which is called "headsect" meaning that it is the header section of the page. It has the heading and logo for the comapany webpage-->
+	<div id="headsect">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="logo" src="images/T-logo.jpg" alt="Techno Town logo">
+			</div>
+			<div class="col-md-4">
+				<h1> Techno Town</h1>
+			</div>
+			<div class="col-md-4">
+				<img class="logo" src="images/T-logo.jpg" alt="Techno Town logo">
+			</div>
+		</div>
+		<!--this is the name of the online store and the logo above-->
+		<h3> <small>The home of online electronics shopping </small></h3>
+		<hr>
+	</div>
+	<br>
+	<!-- I divided the page into head, navigation, body and foot sections-->
+	<div id="navsect" class="container">
+		<nav class="navbar navbar-light bg-light">
+			<a href="Online-store.html"> Home </a>
+			<a href="#products"> Products </a>
+			<a href="#"> Gift Cards </a>
+			<a href="about.html#contact"> Contact Us</a>
+			<a href="about.html"> About Us </a>
+			<a href="chech-out.html"> Check Out </a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+	<!-- above is the navigation section that has a few fuctional links to the other pages of this website like: the Home link which takes you to this exact page (will be better implemented later), the Products link which takes the user straight to where they can see what is available, the "Contact Us" link which takes the user  to the end of the about page and the "About Us" link which take them straight to the top of the About page.-->
+	</div>
+	<br>
+	<br>
+
+	<div id="products" class="container">
+		<div class="row">
+			<div class=" fp img-left col-md-5">
+				<a href="online-store-catalogue.html#phones">
+					<img src="images/phones/phones.jpg" alt="image of cellphones"> Phones 
+				</a>
+			</div>
+
+			<div class="fp img-right col-md-5">
+				<a href="online-store-catalogue.html#laptops">
+					<img src="images/laptops/generic-laptop.jpg" alt="image of a generic laptop"> Laptops 
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="fp img-left col-md-5">
+				<a href="online-store-catalogue.html#tablets">
+					<img src="images/tablets/tablets.jpg" alt="image of tablets"> Tablets 
+				</a>
+			</div>
+
+			<div class="fp img-right col-md-5">
+				<a href="online-store-catalogue.html#accessories">
+					<img src="images/accessories/accessories.jpg" alt="image of device accessories"> Accessories 
+				</a>
+			</div>		
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<div id="footsect" class="container">
+		<h2 id="login"> Login </h2>
+		<br>
+		<form>
+			<label>E-mail:</label>
+			<input type="email" name="email" placeholder="Enter email">
+			<label> Password: </label>
+			<input type="password" name="password" placeholder="Password">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<!-- this is a form at the bottom of the page ass well for any user that may have an account with the company for them to sign into this is not functional either-->
+	</div>
+</body>
+</html>

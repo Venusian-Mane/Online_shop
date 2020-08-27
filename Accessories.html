@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Accessory Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="online-store.css">
+    <script type="text/javascript" src="onlineStore.js"></script>
+</head>
+
+<body onload="loaded()">
+    <div id="headsect">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="logo" src="images/T-logo.jpg" alt="Techno Town logo">
+            </div>
+            <div class="col-md-4">
+                <h1> Techno Town</h1>
+            </div>
+            <div class="col-md-4">
+                <img class="logo" src="images/T-logo.jpg" alt="Techno Town logo">
+            </div>
+        </div>
+        <!--this is the name of the online store and the logo above-->
+        <h3> <small>The home of online electronics shopping </small></h3>
+        <hr>
+    </div>
+    <br>
+	<div id="navsect" class="container">
+		<nav class="navbar navbar-light bg-light">
+			<a href="Online-store.html"> Home </a>
+			<a href="#products"> Products </a>
+			<a href="#"> Gift Cards </a>
+			<a href="about.html#contact"> Contact Us</a>
+			<a href="about.html"> About Us </a>
+			<a href="check-out.html"> Check Out </a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+	</div>
+	<br>
+
+    <br>
+    <div class="container">
+        <table id="prodTable">
+            <tr>
+                <td id="mainThead" colspan="2">
+                    <h2>Our featured Device Accesssories</h2>
+                </td>
+            </tr>
+            <tr class="nameHead">
+                <td colspan="2">
+                    <h3>Apple Watch Series 3</h3>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img class="img-thumbnail" src="images/accessories/apple-watch.jpg"><br></td>
+                <td>
+                    <h4> Specifications</h4><br>
+                    <ul>
+                        <li>8GB ROM</li>
+                        <li>Resolution: 312 x 390 pixels</li>
+                        <li>Screen Size: 1.66-inch OLED</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="bought8()"> Add to cart </button></td>
+            </tr>
+            <br>
+            <tr class="nameHead">
+                <td colspan="2">
+                    <h3>Beats Studio3 Headphones</h3>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img class="img-thumbnail" src="images/accessories/beats-headphones.jpg"><br></td>
+                <td>
+                    <h4> Specifications</h4><br>
+                    <ul>
+                        <li>22 Hour battery life</li>
+                        <li>Conection: Bluetooth wireless, Apple W1 chip</li>
+                        <li>Features: Adaptive Noise Canceling</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="bought9()"> Add to cart </button></td>
+            </tr>
+            <tr class="nameHead">
+                <td colspan="2">
+                    <h3>Huawei Freebuds</h3>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img class="img-thumbnail" src="images/accessories/freebuds.jpg"><br></td>
+                <td>
+                    <h4> Specifications</h4><br>
+                    <ul>
+                        <li>410mAh battery</li>
+                        <li>Connection: Wireless Bluetooth 5.1</li>
+                        <li>Features: Active Noise Canceling, double-tap control</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="bought10()"> Add to cart </button></td>
+            </tr>
+        </table>
+        <button onclick="saveData()"> Save orders to cart </button>
+    </div>
+</body>
+
+</html>

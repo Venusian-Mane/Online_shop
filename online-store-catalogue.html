@@ -1,0 +1,163 @@
+<!-- This is the catalogue page for the online store. It is split up into sections-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Catalogue Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="online-store.css">
+	<script type="text/javascript" src="onlineStore.js"></script>
+</head>
+<body>
+	<div id="headsect">
+		<h1> Catalogue Page </h1>
+		<p>
+			We have an array devices ranging from cellphones and laptops, all the way to the gadgets to go along with you devices. Our catalogue features electronics of various brands, all at affordable prices.
+		</p>
+		<hr>
+	</div>
+	<br>
+	<div id="navsect" class="container">
+		<nav class="navbar navbar-light bg-light">
+			<a href="Online-store.html"> Home </a>
+			<a href="#products"> Products </a>
+			<a href="#"> Gift Cards </a>
+			<a href="about.html#contact"> Contact Us</a>
+			<a href="about.html"> About Us </a>
+			<a href="check-out.html"> Check Out </a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+	</div>
+	<br>
+	<p>
+		We have the following featured for sale and delivery:
+	</p>
+		<ul>
+			<li>Phones</li>
+			<li>Laptops</li>
+			<li>Tablets</li>
+			<li>Accessories</li>
+		</ul>
+	<br>
+
+	<div id="phones">
+	<h2> Cellphones </h2>
+	<p>
+		Here we have a range of phones featuring Samsung, Apple, and Huawei brand cellular devices.
+	</p>
+	</div>
+	<div class="container">
+		<table>
+		<tr>
+			<div class="row">
+			<div class="onClickTextOverImage" style="background-image: url(images/phones/samsung-galaxy-note10-plus-.jpg);">
+				<a href="#note10"></a>
+				<div id="note10"> Samsung Galaxy Note 10+ 256GB ROM, 12GB RAM, 4300mAh battery </div>
+			</div>
+
+			<div class="onClickTextOverImage" style="background-image: url(images/phones/apple-iphone-11.jpg);">
+				<a href="#iphone11"></a>
+				<div id="iphone11"> Apple iPhone 11 256GB ROM, 4GB RAM, 3110mAh battery </div>
+			</div>
+
+			<div class="onClickTextOverImage" style="background-image: url(images/phones/huawei-p30-pro.jpg);">
+				<a href="#huawei-p30-pro"></a>
+				<div id="huawei-p30-pro"> Huawei P30 Pro 512GB ROM, 6GB RAM, 4200mAh battery </div>
+			</div>
+			</div>
+		</tr>
+		</table>
+		<button><a href="phonePage.html"> Proced to Phones Page</a></button>
+	</div>
+	<br>
+	<br>
+
+	<div id="laptops">
+	<h2>Laptops</h2>
+	<p>
+		We also offer high-end laptops for all your computing needs, with our Hp and Apple as our featured products
+	</p>
+	</div>
+	<div class="container">
+		<table>
+		<tr>
+			<div class="row onClickOverTextImage">
+			<div class="onClickTextOverImage" style="background-image: url(images/laptops/hp-spectre-x360.jpg);">
+				<a href="#spectre"></a>
+				<div id="spectre"> Hp Spectre X360 - Intel Core i7 Processor, 512GB SSD, 15-inch R32000 </div>
+			</div>
+
+			<div class="onClickTextOverImage" style="background-image: url(images/laptops/Macbook.jpg);">
+				<a href="#macbook"></a>
+				<div id="macbook"> Apple Macbook Pro - 1.4Ghz i5 Processor, 512GB, 13-inch, R34000 </div>
+			</div>
+			</div>
+		</tr>
+		</table>
+		<button><a href="laptopsPage.html"> Proced to Laptops Page</a></button>
+	</div>
+	<br>
+	<br>
+
+	<div id="tablets">
+	<h2>Tablets</h2>
+	<p>
+		Here we also offer low-end to high-end tablets!
+	</p>
+	</div>
+	<div class="container">
+		<table>
+		<tr>
+			<div class="row">
+			<div class="onClickTextOverImage" style="background-image: url(images/tablets/samsung-tab8.jpg);">
+				<a href="#samsung-tab8"></a>
+				<div id="samsung-tab8"> Samsung Galaxy Tab 8 LTE, 32GB ROM, 2GB RAM, 5100mAh battery R4000 </div>
+			</div>
+
+			<div class="onClickTextOverImage" style="background-image: url(images/tablets/ipad-pro11.jpg);">
+				<a href="#ipad"></a>
+				<div id="ipad"> Apple iPad Pro 11, 128GB ROM, 4GB RAM, 11-inch, 7180mAh battery R20000 </div>
+			</div>
+			</div>
+		</tr>
+		</table>
+		<button><a href="tabletsPage.html"> Proced to Tablets Page</a></button>
+	</div>
+	<br>
+	<br>
+
+	<div id="accessories">
+	<h2> Accessories </h2>
+	<p> 
+		What's a electronic device without a a few gadgets and accessories to go with it? We offer multiple accessories for all your needs.
+	</p>
+	</div>
+	<div class="container">
+		<table>
+		<tr>
+			<div class="row">
+			<div class="onClickTextOverImage" style="background-image: url(images/accessories/apple-watch.jpg);">
+				<a href="#apple-watch"></a>
+				<div id="apple-watch" class="col-md-4"> Apple Watch Series 3, Space grey</div>
+			</div>
+
+			<div class="onClickTextOverImage" style="background-image: url(images/accessories/beats-headphones.jpg);">
+			<a href="#beats"></a>
+			<div id="beats"> Beats Studio3 Headphones, Camo pattern </div>
+			</div>
+
+			<div class="onClickTextOverImage" style="background-image: url(images/accessories/freebuds.jpg);">
+			<a href="#freebuds"></a>
+			<div id="freebuds"> Huawei Freebuds, Black and white</div>
+			</div>
+			</div>
+		</tr>
+		</table>
+		<button><a href="Accessories.html"> Proced to Accessories Page</a></button>
+	</div>
+
+</body>
+</html>
